@@ -1,0 +1,29 @@
+
+// MAYBE LATER :) kinda same as queue, got bored
+
+#pragma once
+class SingleLinkedList
+{
+protected:
+	SingleLinkedList* next;
+
+public:
+	int value;
+
+	SingleLinkedList();
+
+	bool Empty();
+	int Size();
+
+	SingleLinkedList* Front();
+	SingleLinkedList* Back();
+	SingleLinkedList* FromIndex(int index);
+
+	void PopFront();
+	void PopBack();
+	void PopIndex(int index);
+
+	void PushFront(int value);
+	void PushBack(int value);
+	void PushAtIndex(int value, int index);
+};
